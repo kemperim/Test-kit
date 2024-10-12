@@ -107,6 +107,7 @@ function displayResults() {
         count++;
         if(count > 1){
             form.innerHTML = `<p>${userName}, Вы не справились с ${currentLevel} уровнем</p>`;
+            form.innerHTML += `<button id="retry-all">Пройти тест заново</button>`;
         } else {
             form.innerHTML = `<p>${userName}, Вы допустили ошибки в тесте, попробуйте еще 1 раз</p>`;
             form.innerHTML += `<button id="theory-button">Показать теорию для уровня ${currentLevel}</button>`;
